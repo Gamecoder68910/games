@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="minesweeper.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Minesweeper</h1>
+
+    <div class="controls">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="beginner">Beginner (9x9, 10 mines)</option>
+        <option value="intermediate">Intermediate (16x16, 40 mines)</option>
+        <option value="expert">Expert (16x30, 99 mines)</option>
+      </select>
+
+      <button id="newGame">New Game</button>
+
+      <div class="status">
+        <span id="mineCount">Mines: 0</span>
+        <span id="timer">Time: 0</span>
+      </div>
+    </div>
+
+    <div id="board" class="board" aria-label="Minesweeper board"></div>
+
+    <p class="hint">Left click to reveal, right click to flag. Double-click a revealed number to chord (reveal neighbors).</p>
+
+  <p><a href="/index.html">Back to games</a></p>
+  </main>
+
+  <script src="minesweeper.js"></script>
+</body>
+</html>
