@@ -17,3 +17,7 @@ python3 -m http.server 8000
 ```
 
 Contributions welcome — add more games under the `games/` folder.
+
+## Live site
+
+The site is published on GitHub Pages: https://Gamecoder68910.github.io/games/
